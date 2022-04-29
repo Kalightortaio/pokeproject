@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F6F6F7;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+@font-face {
+  font-family: "Encode Sans";
+  src: url(./fonts/EncodeSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Regular.ttf) format('ttf');
+}
+

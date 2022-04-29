@@ -1,0 +1,68 @@
+
+.cardCollection {
+    display: grid;
+    gap: 16px;
+}
+
+.card:nth-child(n+1):nth-child(-n+4) {
+    grid-row: 1 / 4;
+}
+
+.card:nth-child(n+5):nth-child(-n+8) {
+    grid-row: 4 / 7;
+}
+
+.card:nth-child(n+9):nth-child(-n+12) {
+    grid-row: 7 / 10;
+}
+
+.card {
+    background-color: #FDFDFD;
+    border: 1px solid #E3E1E6;
+    border-radius: 12px;
+    box-sizing: border-box;
+    min-width: fit-content;
+    min-height: fit-content;
+    height: 104px;
+    width: 315.8px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.card p {
+    font-family: "Encode Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card p::first-letter {
+    text-transform: capitalize;
+}
+
+.card img {
+    width: 72px;
+    height: 72px;
+    left: 16px;
+    top: 16px;
+    border-radius: 99px;
+    background: #E2E2E2;
+    margin-right: 16px;
+}
+
+.card:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+
+@font-face {
+  font-family: "Encode Sans";
+  src: url(../../fonts/EncodeSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../../fonts/Roboto-Regular.ttf) format('ttf');
+}

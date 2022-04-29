@@ -1,0 +1,232 @@
+.App {
+  text-align: center;
+  display: grid;
+  min-width: 1400px;
+  min-height: 1000px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.Main {
+  grid-row: 1 / 35;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+}
+
+.Selection {
+  background-color: #FDFDFD;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #E3E1E6;
+  border-radius: 12px;
+  position: relative;
+  padding: 20px;
+  gap: 20px;
+  justify-content: left;
+}
+
+.Selection img:first-of-type {
+  height: 300px;
+  width: 300px;
+  z-index: 0;
+  filter: invert(78%) sepia(0%) saturate(314%) hue-rotate(238deg) brightness(92%) contrast(95%);
+}
+
+.Selection img {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  z-index: 1;
+}
+
+.Selection .id {
+  position: absolute;
+  top: -16px;
+  left: 4px;
+}
+
+.Selection .name {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+.Selection .name::first-letter {
+    text-transform: capitalize;
+}
+
+.Selection .type-wrapper {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  width: 250px;
+  height: 100px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.Selection .weight {
+  position: absolute;
+  top: 170px;
+  left: 50px;
+
+}
+
+.Selection .height {
+  position: absolute;
+  top: 210px;
+  left: 50px;
+}
+
+.Selection .desc-wrapper {
+  position: absolute;
+  top: 70px;
+  left: 350px;
+  width: 600px;
+  height: 160px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.Selection .wiki {
+  position: absolute;
+  top: 170px;
+  left: 350px;
+}
+
+.Selection .link {
+  position: absolute;
+  top: 210px;
+  left: 350px;
+}
+
+.Footer {
+  grid-row: 35 / 50;
+  display: grid;
+}
+
+.Title {
+  align-content: center;
+  display: grid;
+}
+
+.Title h1 {
+  grid-column: 1 / 5;
+  font-family: "Encode Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.Title div:first-of-type {
+  grid-column: 35 / 35;
+  margin-top: 20px;
+  margin-right: -20px;
+}
+
+.Title div:last-of-type {
+  grid-column: 37 / 40;
+  margin-top: 20px;
+  margin-right: -20px;
+}
+
+.Title div {
+  display: flex;
+  align-items: center
+}
+
+.Title input {
+  height: 18px;
+  width: 18px;
+  margin-left: -5px;
+  background-color: #F6F6F7;
+}
+
+.Title input:hover {
+  cursor: pointer;
+}
+
+.Title label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 1px;
+  margin-left: 2px;
+}
+
+.Title label:hover {
+  cursor: pointer;
+}
+
+.List {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.Navigation {
+  margin-bottom: -16px;
+  display: grid;
+  padding: 48px;
+}
+
+.Previous {
+  grid-column: 1 / 2;
+  max-height: 40px;
+  background-color: #F6F6F7;
+  border: 2px solid #024E74;
+  border-radius: 8px;
+}
+
+.Previous span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #024E74;
+}
+
+.Previous:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.Next {
+  grid-column: 31 / 32;
+  max-height: 40px;
+  background-color: #F6F6F7;
+  border: 2px solid #024E74;
+  border-radius: 8px;
+}
+
+.Next span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #024E74;
+}
+
+.Next:hover {
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+@font-face {
+  font-family: "Encode Sans";
+  src: url(./fonts/EncodeSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Regular.ttf) format('ttf');
+}
